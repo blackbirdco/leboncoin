@@ -43,7 +43,7 @@ module Leboncoin
   module ResultTime
     UTC_OFFSET = '+01:00'.freeze
     MONTHS = %w(jan fév mars avr mai juin juillet août sept oct nov déc).freeze
-    
+
     months = MONTHS.map { |m| Regexp.escape(m) }
     DATE_RE = /(\d\d?) (#{months * '|'}) (\d\d?):(\d\d)$/
 
